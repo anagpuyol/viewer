@@ -44,7 +44,7 @@
 		controls = new THREE.TrackballControls( camera, renderer.domElement );
 
 		loader = new THREE.JSONLoader();
-		loader.load( 'WaltHeadLo.js', function ( geometry, materials ) {
+		loader.load( 'http://va3c.github.io/viewer/cookbook/json-reader/TypicalTower.json', function ( geometry, materials ) {
 			material = new THREE.MeshNormalMaterial();
 			mesh = new THREE.Mesh( geometry, material );
 			scene.add( mesh );
